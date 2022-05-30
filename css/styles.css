@@ -346,6 +346,12 @@ textarea {
     color: #171515;
   }
 
+  .dark-theme .card-heading .bxl-github{
+    color: #fff;
+  }
+
+  
+
   .card-heading .bxl-netlify:hover,
   .card-heading .bxl-github:hover {
     border-bottom: 3px solid red;
@@ -537,6 +543,10 @@ textarea {
 
 .footer .bxl-github {
   color: #000;
+}
+
+.dark-theme .footer .bxl-github {
+    color: #fff;
 }
 
 .footer .bxl-linkedin {
