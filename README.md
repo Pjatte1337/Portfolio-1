@@ -37,7 +37,7 @@
 
 ### Link to page
 <div>
-  <a href="https://app.netlify.com/sites/musical-begonia-d8bf0c/overview"> Joakim's Portfolio </a>
+  <a href="https://joakim-portfolio.netlify.app/"> Joakim's Portfolio </a>
 </div>
 
 ---
