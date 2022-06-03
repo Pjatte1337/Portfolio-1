@@ -1,5 +1,5 @@
 /* FONTS */
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Righteous&family=Roboto+Slab:wght@700&display=swap');
 /* style */
 *,
 *::before,
@@ -12,10 +12,6 @@
 :root {
   --light-color: #f3f3fe;
   --dark-color: #363636;
-  --border-top-color: rgba(0, 0, 0, 0.1);
-  --link-hover-color: rgba(255, 255, 255, 0.2);
-  --title-font-family: "Playfair Display" . "sarof";
-  --body-font-family: "Poppins", "sans-serif";
   --container-padding: 1.5rem;
   --section-vertical-spacing: 8rem;
 }
@@ -26,18 +22,12 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Playfair Display", sans-serif;
   font-size: 1.6rem;
   line-height: 1.5;
   background-color: var(--light-color);
   color: var(--dark-color);
   overflow-x: hidden;
-}
-
-body.dark-theme {
-  --light-color: #000;
-  --dark-color: #ffff;
-  --border-top-color: rgba(255, 255, 255, 0.1);
 }
 
 a {
@@ -73,7 +63,6 @@ textarea {
   outline: none;
 }
 
-/* REUSABLE CLASSES */
 .container {
   max-width: 96rem;
   margin: 0 auto;
@@ -81,8 +70,8 @@ textarea {
 }
 
 .section {
-    padding-top: 50px ;
-    padding-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 /* HEADER */
@@ -99,13 +88,13 @@ textarea {
 }
 
 .logo {
-  font-family: "Playfair Display", "sarof";
+  font-family: "Righteous", "sarof";
   font-size: 3rem;
   font-weight: 600;
 }
 
 .logo:hover {
-  color: #ff7575;
+  color: #4c00ff;
 }
 
 .navbar-buttons {
@@ -173,14 +162,13 @@ textarea {
 .list-link:focus,
 .scroll-top:hover,
 .scroll-top:focus {
-  color: #ff7575;
+  color: #4c00ff;
 }
 
 .list-link span {
   font-weight: bold;
 }
 
-/* js styles */
 .active.menu {
   z-index: initial;
   pointer-events: initial;
@@ -197,14 +185,6 @@ textarea {
 }
 
 .active .close-icon {
-  display: block;
-}
-
-.dark-theme .theme-off {
-  display: none;
-}
-
-.dark-theme .theme-on {
   display: block;
 }
 
@@ -232,15 +212,22 @@ textarea {
 .section-description {
   gap: 2.5rem;
   margin-bottom: 2.5rem;
+  font-family: "Righteous", "sarof";
 }
 
 .description {
   font-weight: 300;
+  font-family: "Playfair Display", "serif";
+  font-size: 2rem;
 }
+
 
 .text-bold {
   font-weight: bold;
-  color: #8a3ab9;
+}
+
+.text-color {
+  color: #4c00ff;
 }
 
 .description-image {
@@ -274,10 +261,6 @@ textarea {
   opacity: 0.5;
 }
 
-.dark-theme .tech-stack-item i {
-  opacity: 0.8;
-}
-
 .tech-stack-item::before,
 .tech-stack-item::after {
   position: absolute;
@@ -305,19 +288,38 @@ textarea {
 }
 
 .tech-stack-item:hover {
-  color: #ff7575;
+  color: #4c00ff;
 }
 
 .tech-stack-item:hover::before {
   opacity: 1;
   transform: translateY(-0.6rem);
-  color: #ff7575;
 }
 
 .tech-stack-item:hover::after {
   opacity: 1;
   transform: translateY(calc(-100% + -0.5rem));
-  color: #ff7575;
+}
+
+/* Contact info */
+.contact-item {
+  font-size: 1.5rem;
+}
+
+.contact-item ul {
+  display: inline-flex;
+  gap: 15px;
+}
+
+.contact-item ul li i {
+  font-size: 2rem;
+}
+
+.contact-item ul li i:hover {
+  color: #4c00ff;
+  border-bottom: 2px solid #4c00ff;
+  font-weight: bold;
+  font-style: italic;
 }
 
 /* portfolio */
@@ -327,7 +329,8 @@ textarea {
 }
 
 .section-title {
-  font-size: clamp(4rem, 10vw, 8rem);
+  font-family: "Righteous", "sarof";
+  font-size: clamp(2rem, 8vw, 6rem);
   text-decoration: underline;
 }
 
@@ -338,28 +341,20 @@ textarea {
   column-gap: 1.5rem;
 }
 
-
-.card-heading .bxl-netlify{
-    color: #20c6b7;
+.card-heading .bxl-netlify {
+  color: #20c6b7;
 }
 
 .card-heading .bxl-github {
-    color: #171515;
-  }
-
-  .dark-theme .card-heading .bxl-github{
-    color: #fff;
-  }
-
-  
-
-  .card-heading .bxl-netlify:hover,
-  .card-heading .bxl-github:hover {
-    border-bottom: 3px solid red;
-    border-top: 3px solid red;
-  }
+  color: #171515;
+}
 
 
+.card-heading .bxl-netlify:hover,
+.card-heading .bxl-github:hover {
+  border-bottom: 3px solid #4c00ff;
+  border-top: 3px solid #4c00ff;
+}
 
 .subtitle-number {
   width: 5rem;
@@ -398,7 +393,7 @@ textarea {
 
 .portfolio-card:hover .card-image,
 .portfolio-card:focus .card-image {
-  background-color: #ff7575;
+  background-color: #4c00ff;
 }
 
 .card-heading {
@@ -410,13 +405,15 @@ textarea {
 }
 
 .card-title {
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-decoration: underline;
+  font-family: "Righteous", "sarof";
 }
 
 .card-subtitle {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   opacity: 0.8;
+  font-family: "Poppins", "sans-serif";;
 }
 
 .large-button-container {
@@ -436,18 +433,6 @@ textarea {
   text-transform: uppercase;
   text-align: center;
   margin: auto;
-}
-
-.button-fill {
-  position: relative;
-  outline: 2px solid var(--dark-color);
-  overflow: hidden;
-  transition: color 0.25s;
-}
-
-.button-fill:hover,
-.button-fill:focus {
-  color: #ff7575;
 }
 
 .button-fill::before {
@@ -473,51 +458,9 @@ textarea {
   transform: scale(1);
 }
 
-/* contact */
-.contact-form {
-  display: flex;
-  flex-direction: column;
-}
-
-.input {
-  position: relative;
-  margin-bottom: 5rem;
-}
-
-.input-label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  text-transform: uppercase;
-  font-weight: bold;
-  transition: transform 0.25s;
-}
-
-.input input {
-  width: 100%;
-  border-bottom: 1px solid var(--dark-color);
-  padding: 0.5rem;
-}
-
-.input input:focus + .input-label {
-  transform: translateY(-2.5rem);
-}
-
-.form-button {
-  display: inline-block;
-  padding: 1rem 2rem;
-  text-transform: uppercase;
-  margin: 0 auto;
-}
-
-.required-field {
-  font-size: 1rem;
-  color: #ff7575;
-  transform: translateY(-0.8rem);
-}
-
 /* Footer */
 .footer-container {
+  font-family: "Righteous";
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -546,10 +489,6 @@ textarea {
   color: #000;
 }
 
-.dark-theme .footer .bxl-github {
-    color: #fff;
-}
-
 .footer .bxl-linkedin {
   color: #0e76a8;
 }
@@ -558,8 +497,8 @@ textarea {
 .footer .bxl-twitter:hover,
 .footer .bxl-github:hover,
 .footer .bxl-linkedin:hover {
-  border-bottom: 3px solid red;
-  border-top: 3px solid red;
+  border-bottom: 3px solid #4c00ff;
+  border-top: 3px solid #4c00ff;
 }
 
 /* scrollbar */
@@ -568,15 +507,11 @@ textarea {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: var(--dark-color);
+  background-color: #000;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #b3bbce;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: #808694;
+  background-color: #4c00ff;
 }
 
 @media screen and (min-width: 768px) {
@@ -585,14 +520,13 @@ textarea {
     height: 15rem;
   }
 
-
   .section-description {
     grid-template-columns: 1.5fr 1fr;
     align-items: center;
   }
 
   .description {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
 
   .description-image {
@@ -612,4 +546,84 @@ textarea {
   .footer-container {
     padding-block: 5rem;
   }
+}
+
+/* ====== DARK-THEME ====== */
+/* logo */
+.dark-theme .logo:hover {
+  color: #e318ad;
+}
+/* contactinfo */
+.dark-theme .contact-item ul li i:hover {
+  color: #e318ad;
+  border-bottom: 2px solid #e318ad;
+}
+
+.dark-theme .text-color {
+  color: #e318ad;
+}
+
+body.dark-theme {
+  --light-color: #000;
+  --dark-color: #ffff;
+  --border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+.dark-theme .theme-off {
+  display: none;
+}
+
+.dark-theme .theme-on {
+  display: block;
+}
+
+.dark-theme .tech-stack-item i {
+  opacity: 0.8;
+}
+
+.dark-theme .card-heading .bxl-github {
+  color: #fff;
+}
+
+.dark-theme .footer .bxl-github {
+  color: #fff;
+}
+
+.dark-theme .tech-stack-item:hover {
+  color: #e318ad;
+}
+
+.dark-theme .list-link:hover,
+.dark-theme .list-link:focus,
+.dark-theme .scroll-top:hover,
+.dark-theme .scroll-top:focus {
+  color: #e318ad;
+}
+
+.dark-theme .card-heading .bxl-netlify:hover,
+.dark-theme .card-heading .bxl-github:hover {
+  border-bottom: 3px solid #4c00ff;
+  border-top: 3px solid #4c00ff;
+}
+
+.dark-theme .portfolio-card:hover .card-image,
+.dark-theme .portfolio-card:focus .card-image {
+  background-color: #e318ad;
+}
+
+.dark-theme .footer .bxl-instagram:hover,
+.dark-theme .footer .bxl-twitter:hover,
+.dark-theme .footer .bxl-github:hover,
+.dark-theme .footer .bxl-linkedin:hover {
+  border-bottom: 3px solid #e318ad;
+  border-top: 3px solid #e318ad;
+}
+
+/* scrollbar */
+.dark-theme ::-webkit-scrollbar-track {
+  background-color: #000;
+}
+
+.dark-theme::-webkit-scrollbar-thumb {
+  background-color: #e318ad;
 }
