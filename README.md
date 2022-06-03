@@ -6,7 +6,7 @@
  ---
 
 <div>
-  <img src=""width="1200" height="400"/> </img>
+  <img src="https://github.com/Pjatte1337/Portfolio-1/blob/main/img/portfolio.png"width="1200" height="400"/> </img>
 </div>
 
  ---
