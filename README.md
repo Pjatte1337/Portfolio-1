@@ -13,7 +13,9 @@
  
 ### Description
 <p>
-  
+  After the first year of Noroff School of technology and digital media, I needed to make a portfolio website for myself.
+  The requirement was to show three project that I have worked on the last year. 
+  I did work alone on this project so I did everything from CSS,HMTL and Javascript. 
 </p>
 
  ---
