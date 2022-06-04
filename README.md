@@ -6,7 +6,7 @@
  ---
 
 <div>
-  <img src=""width="1200" height="400"/> </img>
+  <img src="https://github.com/Pjatte1337/Portfolio-1/blob/main/img/portfolio.png"width="1200" height="400"/> </img>
 </div>
 
  ---
@@ -22,8 +22,9 @@
 
 ### Tools used
 <div>
-  <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain-wordmark.svg"  title="CSS3" alt="CSS" width="40" height="40"/>&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" title="HTML5" alt="HTML" width="40" height="40"/>&nbsp;
+  <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain-wordmark.svg"  title="CSS3" alt="CSS" width="40" height="40"/>
+  <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" title="HTML5" alt="HTML" width="40" height="40"/>
+  <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JS" width="40" height="40"/>
 </div>
 
 ---
@@ -37,7 +38,7 @@
 
 ### Link to page
 <div>
-  <a href="https://app.netlify.com/sites/musical-begonia-d8bf0c/overview"> Joakim's Portfolio </a>
+  <a href="https://joakim-portfolio.netlify.app/"> Joakim's Portfolio </a>
 </div>
 
 ---
